@@ -667,7 +667,7 @@
                 activeItem,
                 selected = that.classes.selected,
                 container = $(that.suggestionsContainer),
-                children = container.children();
+                children = container.children('.'+that.classes.suggestion); //only applies to suggestions
 
             container.children('.' + selected).removeClass(selected);
 
